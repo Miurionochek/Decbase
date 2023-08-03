@@ -1,0 +1,32 @@
+@import "../fonts";
+@import "../mixins/button-mixin";
+@import "../mixins/description-block-mixins";
+
+.anniversary-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 260px;
+    @include rect-img-mixin(680px, 712px, 3080px);
+    &__twenty{
+        margin-top: 100px;
+        font-family: "Open Sans";
+        font-size: 288px;
+        font-weight: 700;
+        background-image: url("../../images/20-back.svg");
+        background-size: cover;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__description-block{
+        max-width: 650px;
+    }
+    &__header{
+        @include header(500, 50px, 65px);
+        letter-spacing: 4%;
+        margin: 15px 0 30px 0;
+    }
+    &__button{
+        margin-top: 50px;
+        @include btn-mixin(16px);
+    }
+}

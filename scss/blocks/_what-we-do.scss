@@ -1,0 +1,72 @@
+@import "../mixins/description-block-mixins";
+
+.what-we-do{
+    width: 100%;
+    height: 923px;
+    margin-top: 250px;
+    &__pre-header{
+        @include pre-header;
+    }
+    &__header{
+        @include header(400, 48px, 78px);
+    }
+
+    &__button-section{
+        display: flex;
+        width: 1000px;
+        justify-content: space-between;
+    }
+
+    &__button{
+        width: 210px;
+        color: #FFFFFF;
+        padding: 10px 0;
+        border-radius: 20px;
+        border: 5px solid #37806B;
+        background-color: #37806B;
+        font-family: "Open Sans";
+        font-weight: 700;
+        transition: all 1s;
+    }
+
+    &__button:hover{
+        color: #37806B;
+        border: 5px solid #37806B;
+        background-color: #fff;
+    }
+    &__cards-h{
+        display: flex;
+        justify-content: space-between;
+        margin: 100px 0 50px;
+    }
+    &__cards-d{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__card{
+        display: flex;
+        align-items: center;
+        width: 30%;
+        max-width: 500px;
+        padding: 10px 30px;
+        border-radius: 60px 0 60px 0;
+        background-color: #fff;
+        box-shadow: 5px 5px 15px 10px rgba(0,0,0,0.1);
+    }
+    &__card img{
+        height: 44px; 
+    }
+    &__card-d{
+        width: 600px;
+    }
+    &__card-data{
+        margin-left: 20px;
+    }
+
+    &__card-header{
+        @include header(700, 24px, 28px)
+    }
+    &__card-text{
+        @include text;
+    }
+}

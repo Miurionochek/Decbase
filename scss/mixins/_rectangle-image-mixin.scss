@@ -1,0 +1,14 @@
+@mixin rect-img-mixin ($width, $height, $top) {
+    &__img{
+        border-radius: 140px 0 140px 0;
+    }
+    &__under-image-rectangle{
+        width: $width;
+        height: $height;
+        border: 2px solid #B0855B;
+        border-radius: 140px 0 140px 0;
+        position: absolute;
+        top: $top;
+        z-index: -1;
+    }
+}

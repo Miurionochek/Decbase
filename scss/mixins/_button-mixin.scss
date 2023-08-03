@@ -1,0 +1,13 @@
+@mixin btn-mixin ($font-size){
+    color: #FFFFFF;
+    padding: 10px 25px;
+    border-radius: 15px 0px 15px 0px;
+    background-color: #37806B;
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: $font-size;
+    transition: background-color 1s;
+    &:hover{
+        background-color: #57c5a6;
+    }
+}

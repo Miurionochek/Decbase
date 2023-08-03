@@ -1,0 +1,68 @@
+@import "../fonts";
+
+.header{
+    margin: 100px auto;
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 20px 0;
+    top: 0px;
+    background-color: #fff;
+    &__img{
+        display: block;
+    }
+    &__navigation{
+        max-width: 900px;
+        width: 80%;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        
+    }
+    &__list li{
+        list-style: none;
+    }
+    &__link{
+        text-decoration: none;
+        color: #000000;
+        font-family: "Open Sans";
+        font-weight: 600;
+        font-size: 16; 
+        padding: 5px 20px;
+        border-radius: 15px;
+        border: 5px solid white;
+        transition: all 1s;
+   
+    }
+
+    &__link:hover{
+        color: #37806B;
+        border: 5px solid #37806B;
+    }
+
+    &__link_home{
+        color: #808080;
+    }
+
+    &__link_signup{
+        background-color: #CAA892;
+        color: #FFFFFF;
+        padding: 5px 20px;
+        border-radius: 15px 0px 15px 0px;
+        border: 5px solid #CAA892;
+    }
+    &__link_signup:hover{
+        background-color: #dfc9bc;
+        color: #FFFFFF;
+        padding: 5px 20px;
+        border-radius: 15px 0px 15px 0px;
+        border: 5px solid #dfc9bc;
+    }
+
+}

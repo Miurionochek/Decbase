@@ -1,0 +1,19 @@
+@mixin pre-header {
+    color: #646464;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 20px;
+}
+@mixin header ($fw, $fz, $lh){
+    font-family: Poppins;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+}
+
+@mixin text{
+    color: #646464;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 18px;
+}

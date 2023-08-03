@@ -1,0 +1,18 @@
+@import "../mixins/description-block-mixins";
+
+.copyright{
+    @include text;
+    text-align: center;
+    padding: 30px 0;
+    hr{
+        border-top: 1px solid #C4C4C4;
+    }
+    &__data{
+        margin-top: 20px;
+    }
+    &__link{
+        text-decoration: none;
+        color: #37806B;
+    }
+}
+

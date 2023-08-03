@@ -1,0 +1,28 @@
+@import "../fonts";
+@import "../mixins/button-mixin";
+@import "../mixins/description-block-mixins";
+@import "../mixins/rectangle-image-mixin";
+.modern-interior{
+    display: flex;
+    justify-content: center;
+    @include rect-img-mixin(714.85px, 613.23px, 320px);
+
+    &__description-block{
+        max-width: 640px;
+    }
+    &__pre-header{
+        @include pre-header;
+    }
+    &__header{
+        @include header(600, 72px, 78px);
+        margin: 15px 0 30px 0;
+    }
+    &__text{
+        @include text;
+        padding-right: 15px;
+    }
+    &__button{
+        margin-top: 70px;
+        @include btn-mixin(18px);
+    }
+}

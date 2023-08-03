@@ -1,0 +1,53 @@
+@import "../mixins/description-block-mixins";
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    &__text{
+        margin-top: 30px;
+        width: 350px;
+        @include text;
+    }
+    &__title{
+        @include header(700, 24px, 24px);
+        margin-bottom: 20px;
+    }
+    &__list{
+        list-style: none;
+    }
+    li{
+        margin-bottom: 15px;
+    }
+    &__link{
+        @include text;
+        text-decoration: none;
+    }
+    &__link:hover{
+        color:#37806B;
+    }
+    &__social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__social-list{
+        display: flex;
+    }
+
+    &__social-list li{
+        margin-right: 10px;
+    }
+    &__social-link{
+        background-color: #D5D5D5;
+        border-radius: 50%;
+        height: 38px;
+        width: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 1s;
+    }
+    &__social-link:hover{
+        background-color: #37806B;
+    }
+}

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECBASE</title>
+    <link rel="stylesheet" href="./public/index.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ </head>
+<body>
+    <div class="preloader" id="preloader">
+        <div class="preloader__flag"></div>
+        <hr class="preloader__horizontal-line">
+        <div class="preloader__flag"></div>
+        <div class="preloader__logo">
+            <img src="./images/logo.svg" alt="logo">
+        </div>
+    </div>
+    <div class="container" id="container">
+        <header class="header">
+            <a href="#" class="header__logo">
+                <img src="./images/logo.svg" alt="logo" class="header__img">
+            </a>
+            <nav class="header__navigation">
+                <ul class="header__list">
+                    <li>
+                        <a href="#" class="header__link header__link_home">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#modern-interior" class="header__link">PROJECT</a>
+                    </li>
+                    <li>
+                        <a href="#what-we-do" class="header__link">SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="#about-us" class="header__link">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#testimonials" class="header__link">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="#experience" class="header__link">SHOP</a>
+                    </li>
+                    <li>
+                        <a href="#footer" class="header__link">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="#sign-up" class="header__link header__link_signup">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="modern-interior" id="modern-interior">
+            <div class="modern-interior__description-block">
+                <h3 class="modern-interior__pre-header">MODERN INTERIOR</h3>
+                <h1 class="modern-interior__header">
+                    Create Your
+                    Interior Design.
+                </h1>
+                <p class="modern-interior__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation.
+                </p>
+                <button class="modern-interior__button">CONTACT</button>
+            </div>
+            <div class="modern-interior__image-block">
+                <img src="./images/modern-interior.svg" alt="interior" class="modern-interior__img" id="modern-interior__img">
+                <div class="modern-interior__under-image-rectangle" id="modern-interior__under-image-rectangle"></div>
+            </div>
+        </section>
+        <section class="what-we-do" id="what-we-do">
+            <h3 class="what-we-do__pre-header">WHAT WE DO</h3>
+            <h1 class="what-we-do__header">Our Service</h1>
+            <div class="what-we-do__button-section">
+                <button class="what-we-do__button" id="all">ALL</button>
+                <button class="what-we-do__button" id="inter-d">INTERIOR DESIGN</button>
+                <button class="what-we-do__button" id="arch">ARCHITECTURE</button>
+                <button class="what-we-do__button" id="plan">PLANNING</button>
+            </div>
+            <div class="what-we-do__cards-h" id="what-we-do__cards-h">
+                <div class="what-we-do__card what-we-do__card-h" id="1">
+                    <img src="./images/planning.svg" alt="id" class="card__img" id="1_img">
+                    <div class="what-we-do__card-data">
+                        <h1 class="what-we-do__card-header" id="h_1">bla bla</h1>
+                        <p class="what-we-do__card-text" id="t_1">bla bla bla</p>
+                    </div>
+                </div>
+                <div class="what-we-do__card what-we-do__card-h" id="2">
+                    <img src="./images/architecture.svg" alt="id" class="card__img" id="2_img">
+                    <div class="what-we-do__card-data">
+                        <h1 class="what-we-do__card-header" id="h_2">bla bla</h1>
+                        <p class="what-we-do__card-text" id="t_2">bla bla bla</p>
+                    </div>
+                </div>
+                <div class="what-we-do__card what-we-do__card-h" id="3">
+                    <img src="./images/interior-design.svg" alt="id" class="card__img" id="3_img">
+                    <div class="what-we-do__card-data">
+                        <h1 class="what-we-do__card-header" id="h_3">bla bla</h1>
+                        <p class="what-we-do__card-text" id="t_3">bla bla bla</p>
+                    </div>
+                </div>
+            </div>
+            <div class="what-we-do__cards-d" id="cards_d">
+                <div class="what-we-do__card what-we-do__card-d" id="4">
+                    <img src="./images/interior-design.svg" alt="id" class="card__img" id="4_img">
+                    <div class="what-we-do__card-data">
+                        <h1 class="what-we-do__card-header" id="h_4">bla bla</h1>
+                        <p class="what-we-do__card-text" id="t_4">bla bla bla</p>
+                    </div>
+                </div>
+                <div class="what-we-do__card what-we-do__card-d" id="5">
+                    <img src="./images/interior-design.svg" alt="id" class="card__img" id="5_img">
+                    <div class="what-we-do__card-data">
+                        <h1 class="what-we-do__card-header" id="h_5">bla bla</h1>
+                        <p class="what-we-do__card-text" id="t_5">bla bla bla</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-us" id="about-us">
+            <div class="about-us__image-block">
+                <img src="./images/about-us.svg" alt="interior" class="about-us__img" id="about-us__img">
+                <div class="about-us__under-image-rectangle" id="about-us__under-image-rectangle"></div>
+            </div>
+            <div class="about-us__description-block">
+                <h3 class="about-us__pre-header">ABOUT US</h3>
+                <h1 class="about-us__header">
+                    Interioris The Will
+                    of An Epoch Mextreo
+                </h1>
+                <p class="about-us__text">
+                    There are many variations of passages of Lorem Ipsum available,
+                    but the majority have suffered alteration in some form injected
+                    humour, or randomised words which don't look even slightly
+                    believable.If you are going to use a passage of Lorem Ipsum,
+                    sure there isn't anything embarrassing hidden the middleof text.
+                    All the Lorem Ipsum generators on the Internettend to repeat
+                    predefined chunks as necessary,making this the first true
+                    generator on the Internet.
+                </p>
+                <button class="about-us__button">LEARN MORE</button>
+            </div>
+        </section>
+        <section class="anniversary-section" id="anniversary-section">
+            <div class="anniversary-section__description-block">
+                <h1 class="anniversary-section__twenty">20</h1>
+                <h1 class="anniversary-section__header">
+                    Years Of Successful
+                    Working
+                    The Market
+                </h1>
+                <button class="anniversary-section__button">READ MORE</button>
+            </div>
+            <div class="anniversary-section__image-block">
+                <img src="./images/20.svg" alt="shelves" class="anniversary-section__img" id="anniversary-section__img">
+                <div class="anniversary-section__under-image-rectangle" id="anniversary-section__under-image-rectangle"></div>
+            </div>
+        </section>
+        <section class="experience" id="experience">
+            <div class="experience__title">
+                3000+ Completed Work<br>
+                Which WE have Successfully Done
+            </div>
+            <div class="experience__cards">
+                <div class="card">
+                    <div class="card__data">
+                        <div class="card__title">980</div>
+                        <div class="card__subject">Projects</div>
+                    </div>
+                </div>
+                <img src="./images/vector1.svg" alt="vector" class="vector">
+                <div class="card card_down">
+                    <div class="card__data">
+                        <div class="card__title">520</div>
+                        <div class="card__subject">Happy Client</div>
+                    </div>
+                </div>
+                <img src="./images/vector2.svg" alt="vector" class="vector">
+                <div class="card">
+                    <div class="card__data">
+                        <div class="card__title">330</div>
+                        <div class="card__subject">Winners</div>
+                    </div>
+                </div>
+                <img src="./images/vector3.svg" alt="vector" class="vector">
+                <div class="card card_down">
+                    <div class="card__data">
+                        <div class="card__title">120</div>
+                        <div class="card__subject">Recommend</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials" id="testimonials">
+            <h3 class="testimonials__pre-header">TESTIMONIALS</h3>
+            <h1 class="testimonials__header">Client says about us</h1>
+            <div id="carouselExampleControls" class="carousel slide testimonials__slider" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card-carousel__window">
+                            <div class="card-carousel">
+                                <div class="card-carousel__img-section">
+                                    <img src="./images/person1.png" alt="person1" class="card-carousel__img">
+                                </div>
+                                <div class="card-carousel__description-section">
+                                    <div class="card-carousel__header-section">
+                                        <div class="card-carousel__user-section">
+                                            <h1 class="card-carousel__user-name">Louis Saville</h1>
+                                            <p class="card-carousel__user-position"> /CEO at Google inc</p>
+                                        </div>
+                                        <div class="card-carousel__header-decor">"</div>
+                                    </div>
+                                    <p class="card-carousel__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                        elit, sed do eiusmod tempor incididunt ut labore
+                                        et dolore magna aliqua.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-carousel">
+                                <div class="card-carousel__img-section">
+                                    <img src="./images/person2.png" alt="person2" class="card-carousel__img">
+                                </div>
+                                <div class="card-carousel__description-section">
+                                    <div class="card-carousel__header-section">
+                                        <div class="card-carousel__user-section">
+                                            <h1 class="card-carousel__user-name">Louis Saville</h1>
+                                            <p class="card-carousel__user-position"> /CEO at Google inc</p>
+                                        </div>
+                                        <div class="card-carousel__header-decor">"</div>
+                                    </div>
+                                    <p class="card-carousel__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                        elit, sed do eiusmod tempor incididunt ut labore
+                                        et dolore magna aliqua.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-carousel__window">
+                            <div class="card-carousel">
+                                <div class="card-carousel__img-section">
+                                    <img src="./images/person1.png" alt="person1" class="card-carousel__img">
+                                </div>
+                                <div class="card-carousel__description-section">
+                                    <div class="card-carousel__header-section">
+                                        <div class="card-carousel__user-section">
+                                            <h1 class="card-carousel__user-name">Louis Saville</h1>
+                                            <p class="card-carousel__user-position"> /CEO at Google inc</p>
+                                        </div>
+                                        <div class="card-carousel__header-decor">"</div>
+                                    </div>
+                                    <p class="card-carousel__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                        elit, sed do eiusmod tempor incididunt ut labore
+                                        et dolore magna aliqua.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-carousel">
+                                <div class="card-carousel__img-section">
+                                    <img src="./images/person2.png" alt="person2" class="card-carousel__img">
+                                </div>
+                                <div class="card-carousel__description-section">
+                                    <div class="card-carousel__header-section">
+                                        <div class="card-carousel__user-section">
+                                            <h1 class="card-carousel__user-name">Louis Saville</h1>
+                                            <p class="card-carousel__user-position"> /CEO at Google inc</p>
+                                        </div>
+                                        <div class="card-carousel__header-decor">"</div>
+                                    </div>
+                                    <p class="card-carousel__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                        elit, sed do eiusmod tempor incididunt ut labore
+                                        et dolore magna aliqua.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-carousel__window">
+                            <div class="card-carousel">
+                                <div class="card-carousel__img-section">
+                                    <img src="./images/person1.png" alt="person1" class="card-carousel__img">
+                                </div>
+                                <div class="card-carousel__description-section">
+                                    <div class="card-carousel__header-section">
+                                        <div class="card-carousel__user-section">
+                                            <h1 class="card-carousel__user-name">Louis Saville</h1>
+                                            <p class="card-carousel__user-position"> /CEO at Google inc</p>
+                                        </div>
+                                        <div class="card-carousel__header-decor">"</div>
+                                    </div>
+                                    <p class="card-carousel__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                        elit, sed do eiusmod tempor incididunt ut labore
+                                        et dolore magna aliqua.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-carousel">
+                                <div class="card-carousel__img-section">
+                                    <img src="./images/person2.png" alt="person2" class="card-carousel__img">
+                                </div>
+                                <div class="card-carousel__description-section">
+                                    <div class="card-carousel__header-section">
+                                        <div class="card-carousel__user-section">
+                                            <h1 class="card-carousel__user-name">Louis Saville</h1>
+                                            <p class="card-carousel__user-position"> /CEO at Google inc</p>
+                                        </div>
+                                        <div class="card-carousel__header-decor">"</div>
+                                    </div>
+                                    <p class="card-carousel__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                                        elit, sed do eiusmod tempor incididunt ut labore
+                                        et dolore magna aliqua.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__carousel-buttons">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="latest-news" id="latest-news">
+            <div class="latest-news__header-section">
+                <h3 class="latest-news__pre-header">LATEST NEWS</h3>
+                <h1 class="latest-news__header">From Our Blog</h1>
+            </div>
+            <div class="latest-news__cards">
+                <div class="latest-news__card">
+                    <img src="./images/latest-news-1.svg" alt="ln1" class="latest-news1__img" id="latest-news1__img">
+                    <div class="latest-news1__under-image-rectangle" id="latest-news1__under-image-rectangle"></div>
+                    <div class="latest-news__description">
+                    <h1 class="latest-news__title">2020 Interior Design Trends</h1>
+                    <p class="latest-news__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    </div>
+                    <button class="latest-news__button">CONTINUE READING....</button>
+                </div>
+                <div class="latest-news__space"></div>
+                <div class="latest-news__card">
+                    <img src="./images/latest-news-2.svg" alt="ln2" class="latest-news2__img" id="latest-news2__img">
+                    <div class="latest-news2__under-image-rectangle" id="latest-news2__under-image-rectangle"></div>
+                    <div class="latest-news__description">
+                        <h1 class="latest-news__title">28 Notable Product at ARC Interior Design</h1>
+                        <p class="latest-news__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <button class="latest-news__button">CONTINUE READING....</button>
+                </div>
+            </div>
+        </section>
+        <section class="sign-up" id="sign-up">
+            <h1 class="sign-up__title">DON’T FORGET TO SIGN UP</h1>
+            <hr>
+            <p class="sign-up__text">
+                Find out early about all upcoming promotions and new product releases with<br>
+                our newsletter.
+            </p>
+            <div class="sign-up__form" id="sign_up">
+                <div class="sign-up__person-data">
+                    <input type="text" class="sign-up__name" id="name" placeholder="Enter your name.....">
+                    <input type="text" class="sign-up__surname" id="surname" placeholder="Enter your surname.....">
+                </div>
+                <input type="text" class="sign-up__email" id="email" placeholder="Enter your e-mail.....">
+                <br>
+                <button class="sign-up__button" id="sign-up__button">SUBSCRIBE</button>
+            </div>
+        </section>
+        <section class="google-maps">
+            <h1 class="google-maps__header">Our Coordinates</h1>
+            <div class="google-maps__maps">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1092.9474720868627!2d24.011969879786292!3d49.83592476991783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add790d2c8979%3A0x816b961499e08d49!2z0J3QoyAi0JvRjNCy0ZbQstGB0YzQutCwINC_0L7Qu9GW0YLQtdGF0L3RltC60LAi!5e0!3m2!1suk!2sua!4v1681301818981!5m2!1suk!2sua" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1681302592062!6m8!1m7!1sCAoSLEFGMVFpcE04RHJCbGJkV09yMUwwWU5CSk94b3otUmtJUVB1WDhXd0J6b0tt!2m2!1d49.83616800000001!2d24.0115569!3f295.08362969544254!4f8.875743266699004!5f0.7820865974627469" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    >
+                </iframe>
+            </div>
+        </section>
+        <footer class="footer" id="footer">
+            <div class="footer__main">
+                <img src="./images/logo.svg" alt="logo" class="footer__logo">
+                <p class="footer__text">
+                    But i must explain to you all this mistaken
+                    idea of dencouncing pleasure.
+                </p>
+            </div>
+            <div class="footer__links">
+                <h1 class="footer__title">Quick Links</h1>
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__link">About Our Company</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Services WE provide</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Career & Opportunity</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Privacy & policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Contact US</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__company">
+                <h1 class="footer__title">Company</h1>
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__link">About Company</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Our Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Latest News</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Our mission</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Get a free Quot</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__contact-us">
+                <h1 class="footer__title">Contact us</h1>
+                <ul class="footer__list">
+                    <li>
+                        <a href="#" class="footer__link">
+                            Sagrada Familia, Herba<br>
+                            Street Front USA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">brandoxide@gmail.com</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">002-568423591</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <h1 class="footer__title">Follow Us</h1>
+                <ul class="footer__list footer__social-list">
+                    <li>
+                        <div class="footer__social-link">
+                            <a href="https://github.com/Miurionochek">
+                                <img src="./images/facebook.svg" alt="facebook" class="footer__link-item">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="footer__social-link">
+                            <a href="https://github.com/Miurionochek">
+                                <img src="./images/twitter.svg" alt="twitter" class="footer__link-item">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="footer__social-link">
+                            <a href="https://github.com/Miurionochek">
+                                <img src="./images/instagram.svg" alt="instagram" class="footer__link-item">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="footer__social-link">
+                            <a href="https://github.com/Miurionochek">
+                                <img src="./images/linked-in.svg" alt="linked-in" class="footer__link-item">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>           
+        </footer>    
+        <div class="copyright">
+            <hr>
+            <div class="copyright__data">
+                Copyright @
+                <span class="copyright__data" id="copyright__data"></span>
+                <a href="#" class="copyright__link">Brandoxide</a>
+                .all right reversed.
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./js/blocks/preloader.js"></script>
+    <script src="./js/mouse.js"></script>
+    <script type="module" src="./js/blocks/what-we-do.js"></script>
+    <script src="./js/blocks/sign-up.js"></script>
+    <script src="./js/blocks/copyright.js"></script>
+</body>
+</html>

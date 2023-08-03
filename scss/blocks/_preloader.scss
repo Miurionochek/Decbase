@@ -1,0 +1,38 @@
+@import "../animations/line-preloader-kframe";
+@import "../animations/bc-preloader-kframe";
+@import "../animations/logo-preloader-kframe";
+body{
+    overflow: hidden;
+}
+
+.preloader{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    &__horizontal-line{
+        margin: 0;
+        opacity: 1;
+        border-top: 5px solid #37806B;
+        animation: line-preloader 5s linear;
+    }
+    &__flag{
+        width: 100%;
+        height: calc(50% - 5px/2);
+        animation: bc-preloader 2s linear;
+        animation-fill-mode: forwards;
+    }
+
+    &__logo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: logo 5s linear;
+        img{
+            width: 500px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@import "../mixins/description-block-mixins";
+
+.google-maps{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    &__header{
+        @include header(600, 36px, 42px);
+        margin-bottom: 50px;
+    }
+    &__maps{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 650px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    iframe{
+        width: 70%;
+        height: 300px;
+        border: 2px solid white;
+        box-shadow: 5px 5px 10px gray;
+    }
+    
+}

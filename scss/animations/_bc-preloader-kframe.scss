@@ -1,0 +1,18 @@
+@keyframes bc-preloader{
+    from{
+        background: white;
+    }
+    to{
+        background: #37806B;
+        animation: bc-preloader-after 3s;
+    }
+}
+
+@keyframes bc-preloader-after{
+    from{
+        background: #37806B;
+    }
+    to{
+        background: #37806B;
+    }
+}
